@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A83208011741DA41009124DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83208001741DA41009124DD /* UIKit.framework */; };
+		A83208031741DA41009124DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83208021741DA41009124DD /* Foundation.framework */; };
+		A83208051741DA41009124DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83208041741DA41009124DD /* CoreGraphics.framework */; };
+		A832080B1741DA41009124DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A83208091741DA41009124DD /* InfoPlist.strings */; };
+		A832080D1741DA41009124DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A832080C1741DA41009124DD /* main.m */; };
+		A83208111741DA41009124DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A83208101741DA41009124DD /* AppDelegate.m */; };
+		A83208131741DA41009124DD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A83208121741DA41009124DD /* Default.png */; };
+		A83208151741DA41009124DD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A83208141741DA41009124DD /* Default@2x.png */; };
+		A83208171741DA41009124DD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A83208161741DA41009124DD /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A83207FD1741DA41009124DD /* GlassmapRelayTechnology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlassmapRelayTechnology.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A83208001741DA41009124DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A83208021741DA41009124DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A83208041741DA41009124DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A83208081741DA41009124DD /* GlassmapRelayTechnology-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlassmapRelayTechnology-Info.plist"; sourceTree = "<group>"; };
+		A832080A1741DA41009124DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A832080C1741DA41009124DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A832080E1741DA41009124DD /* GlassmapRelayTechnology-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlassmapRelayTechnology-Prefix.pch"; sourceTree = "<group>"; };
+		A832080F1741DA41009124DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A83208101741DA41009124DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A83208121741DA41009124DD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A83208141741DA41009124DD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A83208161741DA41009124DD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A83207FA1741DA41009124DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A83208011741DA41009124DD /* UIKit.framework in Frameworks */,
+				A83208031741DA41009124DD /* Foundation.framework in Frameworks */,
+				A83208051741DA41009124DD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A83207F41741DA41009124DD = {
+			isa = PBXGroup;
+			children = (
+				A83208061741DA41009124DD /* GlassmapRelayTechnology */,
+				A83207FF1741DA41009124DD /* Frameworks */,
+				A83207FE1741DA41009124DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A83207FE1741DA41009124DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A83207FD1741DA41009124DD /* GlassmapRelayTechnology.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A83207FF1741DA41009124DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A83208001741DA41009124DD /* UIKit.framework */,
+				A83208021741DA41009124DD /* Foundation.framework */,
+				A83208041741DA41009124DD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A83208061741DA41009124DD /* GlassmapRelayTechnology */ = {
+			isa = PBXGroup;
+			children = (
+				A832080F1741DA41009124DD /* AppDelegate.h */,
+				A83208101741DA41009124DD /* AppDelegate.m */,
+				A83208071741DA41009124DD /* Supporting Files */,
+			);
+			path = GlassmapRelayTechnology;
+			sourceTree = "<group>";
+		};
+		A83208071741DA41009124DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A83208081741DA41009124DD /* GlassmapRelayTechnology-Info.plist */,
+				A83208091741DA41009124DD /* InfoPlist.strings */,
+				A832080C1741DA41009124DD /* main.m */,
+				A832080E1741DA41009124DD /* GlassmapRelayTechnology-Prefix.pch */,
+				A83208121741DA41009124DD /* Default.png */,
+				A83208141741DA41009124DD /* Default@2x.png */,
+				A83208161741DA41009124DD /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A83207FC1741DA41009124DD /* GlassmapRelayTechnology */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A832081A1741DA41009124DD /* Build configuration list for PBXNativeTarget "GlassmapRelayTechnology" */;
+			buildPhases = (
+				A83207F91741DA41009124DD /* Sources */,
+				A83207FA1741DA41009124DD /* Frameworks */,
+				A83207FB1741DA41009124DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlassmapRelayTechnology;
+			productName = GlassmapRelayTechnology;
+			productReference = A83207FD1741DA41009124DD /* GlassmapRelayTechnology.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A83207F51741DA41009124DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Brian Donohue";
+			};
+			buildConfigurationList = A83207F81741DA41009124DD /* Build configuration list for PBXProject "GlassmapRelayTechnology" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A83207F41741DA41009124DD;
+			productRefGroup = A83207FE1741DA41009124DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A83207FC1741DA41009124DD /* GlassmapRelayTechnology */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A83207FB1741DA41009124DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A832080B1741DA41009124DD /* InfoPlist.strings in Resources */,
+				A83208131741DA41009124DD /* Default.png in Resources */,
+				A83208151741DA41009124DD /* Default@2x.png in Resources */,
+				A83208171741DA41009124DD /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A83207F91741DA41009124DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A832080D1741DA41009124DD /* main.m in Sources */,
+				A83208111741DA41009124DD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A83208091741DA41009124DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A832080A1741DA41009124DD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A83208181741DA41009124DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A83208191741DA41009124DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A832081B1741DA41009124DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlassmapRelayTechnology/GlassmapRelayTechnology-Prefix.pch";
+				INFOPLIST_FILE = "GlassmapRelayTechnology/GlassmapRelayTechnology-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A832081C1741DA41009124DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlassmapRelayTechnology/GlassmapRelayTechnology-Prefix.pch";
+				INFOPLIST_FILE = "GlassmapRelayTechnology/GlassmapRelayTechnology-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A83207F81741DA41009124DD /* Build configuration list for PBXProject "GlassmapRelayTechnology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A83208181741DA41009124DD /* Debug */,
+				A83208191741DA41009124DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A832081A1741DA41009124DD /* Build configuration list for PBXNativeTarget "GlassmapRelayTechnology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A832081B1741DA41009124DD /* Debug */,
+				A832081C1741DA41009124DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A83207F51741DA41009124DD /* Project object */;
+}
