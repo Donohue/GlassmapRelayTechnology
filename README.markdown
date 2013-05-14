@@ -14,6 +14,17 @@ The proof of concept is comprised of roughly 40 lines of code, and simply turns 
 * Register for VOIP keep alive handler
 * Switch background location updates on/off every 10 minutes (smallest allowed keep alive timeout)
 
+Sample Output
+----------------
+2013-05-13 23:14:30.280 GlassmapRelayTechnology[51779:c07] Keep alive handler registered
+2013-05-13 23:14:30.287 GlassmapRelayTechnology[51779:c07] Did update to location: 40.747214, -74.004722
+2013-05-13 23:14:30.943 GlassmapRelayTechnology[51779:c07] Did update to location: 40.747214, -74.004722
+.......
+2013-05-13 23:24:30.025 GlassmapRelayTechnology[51779:c07] Did update to location: 40.747214, -74.004722
+2013-05-13 23:24:30.274 GlassmapRelayTechnology[51779:c07] Keep alive: Stopping location updates
+2013-05-13 23:34:30.269 GlassmapRelayTechnology[51779:c07] Keep alive: Starting location updates
+2013-05-13 23:34:30.275 GlassmapRelayTechnology[51779:c07] Did update to location: 40.747214, -74.004722
+
 Implications
 -----------------
 
