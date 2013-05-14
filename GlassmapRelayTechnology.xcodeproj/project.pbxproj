@@ -16,6 +16,7 @@
 		A83208131741DA41009124DD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A83208121741DA41009124DD /* Default.png */; };
 		A83208151741DA41009124DD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A83208141741DA41009124DD /* Default@2x.png */; };
 		A83208171741DA41009124DD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A83208161741DA41009124DD /* Default-568h@2x.png */; };
+		A832081E1741DDCC009124DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A832081D1741DDCC009124DD /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A83208121741DA41009124DD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A83208141741DA41009124DD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A83208161741DA41009124DD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A832081D1741DDCC009124DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A832081E1741DDCC009124DD /* CoreLocation.framework in Frameworks */,
 				A83208011741DA41009124DD /* UIKit.framework in Frameworks */,
 				A83208031741DA41009124DD /* Foundation.framework in Frameworks */,
 				A83208051741DA41009124DD /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +54,7 @@
 		A83207F41741DA41009124DD = {
 			isa = PBXGroup;
 			children = (
+				A832081D1741DDCC009124DD /* CoreLocation.framework */,
 				A83208061741DA41009124DD /* GlassmapRelayTechnology */,
 				A83207FF1741DA41009124DD /* Frameworks */,
 				A83207FE1741DA41009124DD /* Products */,

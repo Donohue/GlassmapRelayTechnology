@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate> {
+    CLLocationManager *location_manager;
+    CLLocation *last_location;
+    BOOL updating_location;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

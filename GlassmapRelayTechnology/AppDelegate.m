@@ -13,6 +13,8 @@
 - (void)dealloc
 {
     [_window release];
+    [location_manager release];
+    [last_location release];
     [super dealloc];
 }
 
@@ -22,34 +24,39 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    location_manager = [[CLLocationManager alloc] init];
+    location_manager.desiredAccuracy = kCLLocationAccuracyBest;
+    location_manager.delegate = self;
+    [location_manager startUpdatingLocation];
+    updating_location = YES;
+    
+    BOOL ret = [[UIApplication sharedApplication] setKeepAliveTimeout:600 handler:^(void) {
+        if (updating_location) {
+            [location_manager stopUpdatingLocation];
+            NSLog(@"Keep alive: Stopping location updates");
+        }
+        else {
+            [location_manager startUpdatingLocation];
+            NSLog(@"Keep alive: Starting location updates");
+        }
+        
+        updating_location = !updating_location;
+    }];
+    
+    if (ret) {
+        NSLog(@"Keep alive handler registered");
+    }
+    
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+#pragma mark CLLocationDelegate
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    [last_location release];
+    last_location = (CLLocation *)[[locations lastObject] retain];
+    NSLog(@"Did update to location: %f, %f",
+          last_location.coordinate.latitude, last_location.coordinate.longitude);
 }
 
 @end
